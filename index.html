@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+<!-- Add this inside your <header> element, before or after the .logo div -->
+<svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="6" width="24" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="8" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2"/>
+  <line x1="8" y1="14" x2="24" y2="14" stroke="currentColor" stroke-width="2"/>
+  <line x1="8" y1="18" x2="20" y2="18" stroke="currentColor" stroke-width="2"/>
+  <path d="M10 24L14 28M14 24L10 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+        <div class="logo">Work-ham Text Editor</div>
+        <div class="toolbar">
+            <button id="import-btn">Import</button>
+            <input type="file" id="file-input" accept=".txt,.md,.html,.js,.css,.json">
+            <button id="save-btn" title="Save (Ctrl+S)">Save</button>
+            <button id="clear-btn">Clear</button>
+            <button id="dark-mode-btn">Light Mode</button>
+            <button id="download-btn">Download</button>
+        </div>
+    </header>
+    
+    <div class="editor-container">
+        <textarea id="editor" placeholder="Start typing here..."></textarea>
+    </div>
+    
+    <div class="status-bar">
+        <div class="file-info">Untitled.txt</div>
+        <div>
+            <span class="word-count">0</span>
+            <span class="char-count">0</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
